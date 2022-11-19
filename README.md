@@ -79,3 +79,12 @@ The script for the email update can be found [here](https://github.com/AaronShep
 
 <h3>The gradebook </h3>
 
+<p align="center">
+Here we just record the grade data for HW, etc.,  (attempts A and B if needed) in cells E on up as needed: <br/>
+<img src="https://github.com/AaronShepanik/Automated_Emails/blob/main/Images/WrittenHW.png"/>
+<br />
+<br />
+
+<p align="center">
+Cells B, C, and D are what are used to compose the message. The formula in Cell D2 is shown that aggregates the gradebook data into a useful summary for the student: <br/>
+<img src="https://github.com/AaronShepanik/Automated_Emails/blob/main/Images/EmailMessageAggregation.png"/>
