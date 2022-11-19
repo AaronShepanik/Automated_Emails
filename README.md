@@ -74,7 +74,8 @@ First, it helps to see the grading table that was in the syllabus. Below are the
                 <p>Again, <strong><em>all</em> of the requirements in a grade column must be met or exceeded in order to earn that grade</strong>. Otherwise your grade is the <em>highest</em> grade for which <em>all</em> the requirements are met are exceeded. For example, if you earned 88% on the Online HW, you are not eligible to earn a base A, your base grade is B at best.&nbsp; A grade of F will be given if the requirements for D are not met.</p>
                 
 <h3>Script for Automated Email Update </h3>
-The script for the email update can be found here. The script references fields from the gradebook below.
+
+The script for the email update can be found [here](https://github.com/AaronShepanik/Automated_Emails/blob/main/Send_Emails). The script references fields from the gradebook below.
 
 <h3>The gradebook </h3>
 
