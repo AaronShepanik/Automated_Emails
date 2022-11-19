@@ -1,0 +1,23 @@
+/**
+ * Sends emails with data from the current spreadsheet.
+ */
+function sendEmails() {
+  var sheet = SpreadsheetApp.getActiveSheet();
+  var startRow = 2; // First row of data to process
+  var numRows = 93; // Number of rows to process -change this number based on the number students to send emails to in the sheet
+  // Fetch the range of cells A2:B3
+  var dataRange = sheet.getRange(startRow, 1, numRows, 4);
+  // Fetch values for each row in the Range, syntax is getRange (start row cell, starting column cell, number of rows in the range, number of columns in the range
+  var data = dataRange.getValues();
+  for (var i in data) {
+    var row = data[i];
+    var name = row[0]; // first column
+    var emailAddress = row[1]; // second column
+    var message = row[2]; // third column
+    var grade = row[3]; // fourth column
+    var subject = 'Automated Grade Update from A. Shepanik';
+    
+    message=message.replace("<name>", name).replace("<grade>", grade);
+    MailApp.sendEmail(emailAddress, subject, message, {cc: ''});
+  }
+}
